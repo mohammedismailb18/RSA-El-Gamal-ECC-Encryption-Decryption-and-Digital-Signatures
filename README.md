@@ -9,4 +9,4 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 5. c can be decrypted by using the public key, m = c^d(mod n).
 
 **Output for 512 bits**
-<img src = "https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-DigitalSignatures/blob/main/1.%20RSA_Encryption_Decryption/output_512bits.jpg">
+![512 bits output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/1.%20RSA_Encryption_Decryption/output_512bits.jpg)

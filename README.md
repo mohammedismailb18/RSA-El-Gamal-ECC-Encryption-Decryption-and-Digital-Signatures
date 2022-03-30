@@ -2,6 +2,8 @@
 Assignment done as part of Introduction to Information Security Course (CS4062D). All programs are written in C++ using NTL library.
 
 ## RSA Encryption and Decryption
+---------------------------------
+----------------------------------
 1. Choose two primes p and q of no of bits l. Let n = p * q
 2. Let the public key, e ∈ Z be positive such that gcd(e, Φ(n)) = 1.
 3. Then the private key, d ∈ Z such that de ≡ 1 (mod(Φ(n))).
@@ -17,6 +19,8 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 ![1024 bits output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/1.%20RSA_Encryption_Decryption/output_1024bits.jpg)
 
 ## El-Gamal Encryption and Decryption
+--------------------------------------
+--------------------------------------
 
 ### DL Domain Parameter Generation
 -----------------------------------

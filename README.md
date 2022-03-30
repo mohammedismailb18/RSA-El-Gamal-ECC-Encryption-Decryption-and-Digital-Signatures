@@ -2,8 +2,6 @@
 Assignment done as part of Introduction to Information Security Course (CS4062D). All programs are written in C++ using NTL library.
 
 ## RSA Encryption and Decryption
----------------------------------
-----------------------------------
 1. Choose two primes p and q of no of bits l. Let n = p * q
 2. Let the public key, e ∈ Z be positive such that gcd(e, Φ(n)) = 1.
 3. Then the private key, d ∈ Z such that de ≡ 1 (mod(Φ(n))).
@@ -19,11 +17,8 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 ![1024 bits output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/1.%20RSA_Encryption_Decryption/output_1024bits.jpg)
 
 ## El-Gamal Encryption and Decryption
---------------------------------------
---------------------------------------
 
 ### DL Domain Parameter Generation
------------------------------------
 INPUT : Security parameter l and t <br>
 OUTPUT : DL domain parameters (p, q, g)
 1. Select a t bit prime p and l bit prime q such that q divides p-1.
@@ -31,7 +26,6 @@ OUTPUT : DL domain parameters (p, q, g)
 3. if g = 1, then go to step 3
 
 ### DL Key Pair Generation
-------------------------------
 INPUT : DL domain parameters (p, q, g) <br>
 OUTPUT : public key **y** and private key **x**
 1. Select x ∈ [1, q-1].
@@ -39,7 +33,6 @@ OUTPUT : public key **y** and private key **x**
 3. return (y, x)
 
 ### El-Gamal Encryption
-------------------------
 INPUT : DL domain parameters (p, q, g), public key y, plain text m ∈ [0, p-1]. <br>
 OUTPUT : CipherText (c1, c2)
 1. Choose k randomly from [1, q-1].
@@ -48,7 +41,6 @@ OUTPUT : CipherText (c1, c2)
 4. return (c1, c2)
 
 ### El-Gamal Decryption
-----------------------
 INPUT : DL domain parameters (p, q, g), private key x, cipher text (c1, c2). <br>
 OUTPUT : plaintext m
 1. compute m = c2 * c1^-x (mod p)

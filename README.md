@@ -54,3 +54,40 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 
 ![1024 bits output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/2.%20El_Gamal_Encryption_Decryption/output_1024bits.jpg)
 
+## 3. ECC Encryption and Decryption
+
+### 3.1 ECC NIST parameters for 192 bits
+1. Feild, p = 2<sup>192</sup> −2<sup>64</sup> −1
+2. a = −3 (where a is in y<sup>2</sup> = x<sup>3</sup> + ax + b)
+3. b = 0x 64210519 E59C80E7 0FA7E9AB 72243049 FEB8DEEC C146B9B1 (where b is in y<sup>2</sup> = x<sup>3</sup> + ax + b)
+4. n = 0x FFFFFFFF FFFFFFFF FFFFFFFF 99DEF836 146BC9B1 B4D22831 (order of E<sub>(a, b)</sub>(F<sub>p</sub>))
+5. x = 0x 188DA80E B03090F6 7CBF20EB 43A18800 F4FF0AFD 82FF1012 (x cordinate of base point)
+6. y = 0x 07192B95 FFC8DA78 631011ED 6B24CDD5 73F977A1 1E794811 (y cordinate of base point)
+
+### 3.2 Elliptic Curve Key Pair Generation
+**INPUT**: Elliptic curve domain parameters (p, E, P,n). <br>
+**OUTPUT**: Public key Q and private key d
+1. Select d ∈<sub>R</sub> [1,n −1].
+2. Compute Q = d.P.
+3. Return(Q,d).
+
+### 3.3 Elgamal Elliptic Curve Encryption
+**INPUT**: Elliptic curve domain parameters (p, E, P,n), public key Q, plaintext m. <br>
+**OUTPUT**: Ciphertext (C1,C2).
+1. Represent the message m as a point M in E(Fp).
+2. Select k ∈<sub>R</sub> [1,n −1].
+3. Compute C1 = k.P.
+4. Compute C2 = M +k.Q.
+5. Return(C1,C2).
+
+### 3.4 ElGamal Elliptic Curve Decryption
+**INPUT:** Domain parameters (p, E, P,n), private key d, ciphertext (C1,C2). <br>
+**OUTPUT:** Plaintext m.
+1. Compute M = C2 −d.C1, and extract m from M.
+2. Return(m).
+
+**Output**
+
+![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/ECC_Encryption_Decryption/Screenshot%202022-04-01%20085240.jpg)
+
+

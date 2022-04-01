@@ -71,7 +71,7 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 2. Compute Q = d.P.
 3. Return(Q,d).
 
-### 3.3 Elgamal Elliptic Curve Encryption
+### 3.3 ElGamal Elliptic Curve Encryption
 **INPUT**: Elliptic curve domain parameters (p, E, P,n), public key Q, plaintext m. <br>
 **OUTPUT**: Ciphertext (C1,C2).
 1. Represent the message m as a point M in E(Fp).

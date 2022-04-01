@@ -88,6 +88,6 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 
 **Output**
 
-![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/ECC_Encryption_Decryption/Screenshot%202022-04-01%20085240.jpg)
+![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/3.%20ECC_Encryption_Decryption/Screenshot%202022-04-01%20085240.jpg)
 
 

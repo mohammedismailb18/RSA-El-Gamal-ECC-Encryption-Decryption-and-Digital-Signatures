@@ -111,3 +111,23 @@ Verifying a signature s for the message msg with the public key e:
 **Output**
 
 ![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/4.%20RSA_Digital_Signature/output.jpg)
+
+
+## 5. ElGamal Digital Signature
+### 5.1 Sign
+**INPUT:** (message (m), private key (x), p) <br>
+**OUTPUT:** (r, s)
+1. Choose an integer k randomly from {2,....,p-2} with k relatively prime to p-1.
+2. Compute r = g<sup>k</sup> (mod p).
+3. Compute s = (H(m) - x.r).k<sup>-1</sup> (mod p-1).
+4. if s == 0, then go to step 1.
+
+### 5.2 RSA Verify Signature
+**INPUT:** (r, s, message (m), public key (y), p) <br>
+**OUTPUT:** prints valid sign or not <br>
+1. Verify that 0<r<p and 0<s<p-1.
+2. The signature is valid if and only if g<sup>H(m)</sup> = y<sup>r</sup>.r<sup>s</sup> (mod p).
+
+**Output**
+
+![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/5.%20ElGamal_Digital_Signature/output.jpg)

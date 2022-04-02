@@ -131,3 +131,32 @@ Verifying a signature s for the message msg with the public key e:
 **Output**
 
 ![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/5.%20ElGamal_Digital_Signature/output.jpg)
+
+## 6. ECC Digital Signature
+### 6.1 Sign
+**INPUT:** Domain parameters D = (q,FR,S,a,b,P,n,h), private key(d), message(m). <br>
+**OUTPUT:** Signature(r,s).
+1. Select k ∈<sub>R</sub> [1,n −1].
+2. Compute k.P = (x1, y1) and convert x1 to an integer x1.
+3. Compute r = x1 mod n. If r = 0 then go to step 1.
+4. Compute e = H(m).
+5. Compute s = k<sup>−1</sup>(e +d.r) (mod n). If s = 0 then go to step 1.
+6. Return(r,s).
+
+### 6.2 Verify Signature
+**INPUT:** Domain parameters D = (q,FR,S,a,b,P,n,h), public key(Q), message(m), signature (r,s). <br>
+**OUTPUT:** Acceptance or rejection of the signature.
+1. Verify that r and s are integers in the interval [1,n −1]. If any verification fails
+then return(“Reject the signature”).
+2. Compute e = H(m).
+3. Compute w = s<sup>−1</sup> mod n.
+4. Compute u1 = e.w (mod n) and u2 = r.w (mod n).
+5. Compute X = u1.P +u2.Q.
+6. If X = ∞, then return(“Reject the signature”);
+7. Convert the x-coordinate x1 of X to an integer x1; compute v = x1 mod n.
+8. If v == r, then return(“Accept the signature”);
+   Else return(“Reject the signature”).
+
+**Output**
+
+![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/6.%20ECC_Digital_Signature/output.jpg)

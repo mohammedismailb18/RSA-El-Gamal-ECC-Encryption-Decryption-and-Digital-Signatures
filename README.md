@@ -92,7 +92,8 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 
 ## 4. RSA Digital Signature
 ### 4.1 RSA Sign
-**INPUT:** (message (msg), private key (d), n)
+**INPUT:** (message (msg), private key (d), n) <br>
+**OUTPUT:** Signature (s) <br>
 Signing a message msg with the private key exponent d: <br>
 1. Calculate the message hash: h = hash(msg)
 2. Encrypt h to calculate the signature : s = h<sup>d</sup>(modn)

@@ -90,4 +90,23 @@ Assignment done as part of Introduction to Information Security Course (CS4062D)
 
 ![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/3.%20ECC_Encryption_Decryption/Screenshot%202022-04-01%20085240.jpg)
 
+## 4. RSA Digital Signature
+### 4.1 RSA Sign
+**INPUT:** (message (msg), private key (d), n)
+Signing a message msg with the private key exponent d: <br>
+1. Calculate the message hash: h = hash(msg)
+2. Encrypt h to calculate the signature : s = h<sup>d</sup>(modn)
 
+The hash h should be in the range [0...n). The obtained signature s is an integer in the range [0...n).
+
+### 4.2 RSA Verify Signature
+**INPUT:** (Signature (s), message (msg), public key (e), n) <br>
+**OUTPUT:** prints valid sign or not <br>
+Verifying a signature s for the message msg with the public key e:
+1. Calculate the message hash: h = hash(msg)
+2. Decrypt the signature: h′ = s<sup>e</sup>(modn)
+3. if h == h′, then signature is valid else signature is invalid.
+
+**Output**
+
+![output](https://github.com/mohammedismailb18/RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures/blob/main/4.%20RSA_Digital_Signature/output.jpg)

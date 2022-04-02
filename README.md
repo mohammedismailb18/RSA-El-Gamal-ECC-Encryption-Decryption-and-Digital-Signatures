@@ -122,7 +122,7 @@ Verifying a signature s for the message msg with the public key e:
 3. Compute s = (H(m) - x.r).k<sup>-1</sup> (mod p-1).
 4. if s == 0, then go to step 1.
 
-### 5.2 RSA Verify Signature
+### 5.2 Verify Signature
 **INPUT:** (r, s, message (m), public key (y), p) <br>
 **OUTPUT:** prints valid sign or not <br>
 1. Verify that 0<r<p and 0<s<p-1.

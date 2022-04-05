@@ -1,5 +1,5 @@
 # RSA-El-Gamal-ECC-Encryption-Decryption-and-Digital-Signatures
-Assignment done as part of Introduction to Information Security Course (CS4062D). All programs are written in C++ using NTL library.
+Assignment done as part of Introduction to Information Security Course (CS4062D). All programs are written in C++ using NTL library. For installing NTL library refer <a href = "https://libntl.org/doc/tour-unix.html">this.</a>
 
 ## 1. RSA Encryption and Decryption
 1. Choose two primes p and q of no of bits l. Let n = p * q
